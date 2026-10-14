@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <title>Karcho CyberLab</title>  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b16;
+      color: #f1f5ff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      background: #10152a;
+      border-bottom: 1px solid #29365a;
+      text-align: center;
+    }
+
+    header h2 {
+      color: #a970ff;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: #dce4ff;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      background: radial-gradient(
+        circle at top,
+        #292052,
+        #080b16 70%
+      );
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 7vw, 52px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #a970ff;
+    }
+
+    .hero p {
+      max-width: 550px;
+      margin: 0 auto 25px;
+      color: #b7c1dc;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #8b45f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px 18px;
+    }
+
+    .container h2 {
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
+      gap: 18px;
+    }
+
+    .card {
+      background: #11172a;
+      border: 1px solid #29365a;
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      color: #b98aff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #b7c1dc;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      color: #58dcff;
+      text-decoration: none;
+    }
+
+    .about {
+      color: #b7c1dc;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      border-top: 1px solid #29365a;
+      color: #b7c1dc;
+    }
+  </style></head><body>  <header>
+    <h2>KARCHO CYBERLAB</h2><nav>
+  <a href="#home">Home</a>
+  <a href="#learn">Learn</a>
+  <a href="#projects">Projects</a>
+  <a href="#about">About</a>
+</nav>
+
+  </header>  <main>
+    <section class="hero" id="home">
+      <h1>
+        Welcome to<br>
+        <span class="highlight">CyberLab</span>
+      </h1>  <p>
+    Learn web development, Python programming
+    and cybersecurity through practical projects.
+  </p>
+
+  <a class="button" href="#learn">
+    Start Learning
+  </a>
+</section>
+
+<section class="container" id="learn">
+  <h2>Learning Center</h2>
+
+  <div class="grid">
+    <article class="card">
+      <h3>HTML & CSS</h3>
+      <p>
+        Learn how to build and design modern websites.
+      </p>
+      <a href="https://developer.mozilla.org/">
+        Start Learning →
+      </a>
+    </article>
+
+    <article class="card">
+      <h3>Python Programming</h3>
+      <p>
+        Learn Python and build your first programs.
+      </p>
+      <a href="https://www.python.org/about/gettingstarted/">
+        Start Learning →
+      </a>
+    </article>
+
+    <article class="card">
+      <h3>Cybersecurity</h3>
+      <p>
+        Learn web security using authorized practice labs.
+      </p>
+      <a href="https://portswigger.net/web-security">
+        Explore Labs →
+      </a>
+    </article>
+  </div>
+</section>
+
+<section class="container" id="projects">
+  <h2>My Projects</h2>
+
+  <div class="grid">
+    <article class="card">
+      <h3>My First Website</h3>
+      <p>
+        A responsive website built with HTML and CSS.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Python Experiments</h3>
+      <p>
+        A place to showcase programming projects.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="container about" id="about">
+  <h2>About Me</h2>
+  <p>
+    Welcome to my personal CyberLab.
+    I am learning web development, programming
+    and ethical cybersecurity.
+  </p>
+</section>
+
+  </main>  <footer>
+    © <span id="year"></span> Karcho CyberLab
+    <br>
+    Learn. Build. Secure.
+  </footer>  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script></body>
+</html>
